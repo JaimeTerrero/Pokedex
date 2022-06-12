@@ -1,0 +1,37 @@
+﻿@model List<Application.ViewModels.PokemonViewModel>
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container-fluid">
+    <div class="row">
+
+        @if(Model == null || Model.Count == 0){
+            <h2>No hay Pokémones aún</h2>
+        }
+        else
+        {
+            @foreach (Application.ViewModels.PokemonViewModel item in Model)
+            {
+                <div class="col-4">
+                  <div class="card shadow-sm">
+
+                    <img class="bd-placeholder-img card-img-top" src="@item.ImageUrl" />
+
+                    <div class="card-body">
+                        <h4>@item.Name</h4>
+                        <div>
+                            <small class="fw-bold fs-6">Región: @item.RegionName</small>
+                        </div>
+                      <div>
+                        <small class="fw-bold fs-6 d-block">Tipo Primario: @item.TipoPrimario</small>
+                        <small class="fw-bold fs-6">Tipo Secundario: @item.TipoSecundario</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            }
+        }
+                        
+     </div>
+</div>
