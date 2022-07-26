@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uCEiY0ALygwK2EXn/DvQ5s6h5vc4l3mLVJcdk492e3c+08IrYDt+2lc3ezVW9ZeMNyh/qSrqGlJ/SiDmK5uM5A==",
+  "dgSpecHash": "qAmwl9eMZvtrSsUdWZeqbaeM4X+jNsrnj9GhAdiLPZhLkzzaFXct5yAqspmAwxHLjbt74px5qW6QmwQFePGiMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jaime David Terrero\\source\\repos\\Pokedex\\Pokedex\\Pokedex.csproj",
+  "projectFilePath": "C:\\Users\\Jaime David Terrero\\OneDrive\\Documentos\\GitHub\\Pokedex\\Pokedex\\Pokedex.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jaime David Terrero\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Jaime David Terrero\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
