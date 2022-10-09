@@ -25,7 +25,10 @@ namespace Pokedex.Controllers
 
         public async Task<IActionResult> Create()
         {
-            return View("SavePokemon", await _pokemonService.GetRegionFinally());
+            SavePokemonViewModel vm = new();
+            vm.Typee = await _typeeService.GetAllViewModel();
+            vm.region = await _regionService.GetAllViewModel();
+            return View("SavePokemon", vm);
         }
 
         [HttpPost]
@@ -42,7 +45,10 @@ namespace Pokedex.Controllers
 
         public async Task<IActionResult> Edit(int id)
         {
-            return View("SavePokemon", await _pokemonService.GetByIdSaveViewModel(id));
+            SavePokemonViewModel vm = await _pokemonService.GetByIdSaveViewModel(id);
+            vm.Typee = await _typeeService.GetAllViewModel();
+            vm.region = await _regionService.GetAllViewModel();
+            return View("SavePokemon", vm);
         }
 
         [HttpPost]

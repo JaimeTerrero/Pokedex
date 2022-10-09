@@ -20,8 +20,10 @@ namespace Application.ViewModels
         public int TipoSecundario { get; set; }
         [Required(ErrorMessage = "Debe colocar la región del Pokemón")]
         public int RegionId { get; set; }
-        public List<Region> region { get; set; }
+        public List<RegionViewModel> region { get; set; }
         //public List<SaveTypeeViewModel> saveTypeeViewModels { get; set; }
-        public List<Typee> Typee{ get; set; }
+        public List<TypeeViewModel> Typee{ get; set; }
+
+
     }
 }

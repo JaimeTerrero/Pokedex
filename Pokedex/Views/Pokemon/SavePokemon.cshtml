@@ -30,13 +30,18 @@
 
                         <div class="mb-3">
                             <label asp-for="TipoPrimario" class="form-label">Tipo Primario: </label>
-                            <input type="number" asp-for="TipoPrimario" class="form-control" />
+                            <select asp-for="TipoPrimario" asp-items="@(new SelectList(Model.Typee,"Id","Name"))" class="form-select">
+                                <option value="0" disabled>Seleccione un opción</option>
+                            </select>
                             <span asp-validation-for="TipoPrimario" class="text-danger"></span>
                         </div>
 
                         <div class="mb-3">
                             <label asp-for="TipoSecundario" class="form-label">Tipo Secundario: </label>
-                            <input type="number" asp-for="TipoSecundario" class="form-control" />
+                            <select asp-for="TipoSecundario" asp-items="@(new SelectList(Model.Typee,"Id","Name"))" class="form-select">
+                                <option value="0" disabled>Seleccione un opción</option>
+                            </select>
+                            <span asp-validation-for="TipoSecundario" class="text-danger"></span>
                         </div>
 
                         <div class="mb-3">

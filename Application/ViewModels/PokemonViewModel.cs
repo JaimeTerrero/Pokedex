@@ -12,9 +12,14 @@ namespace Application.ViewModels
         public int Id { get; set; }
         public string Name { get; set; }
         public string ImageUrl { get; set; }
+
+
         public string TipoPrimario { get; set; }
         public string TipoSecundario { get; set; }
+
+
         public int RegionId { get; set; }
+        public List<RegionViewModel> Regions { get; set; }
         public string RegionName { get; set; }
     }
 }

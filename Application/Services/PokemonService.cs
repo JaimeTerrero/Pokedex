@@ -65,27 +65,26 @@ namespace Application.Services
             vm.TipoPrimario = pokemon.TipoPrimario;
             vm.TipoSecundario = pokemon.TipoSecundario;
             vm.RegionId = pokemon.RegionId;
-            vm.region = region;
             return vm;
         }
 
-        public async Task<SavePokemonViewModel> GetRegionFinally()
-        {
-            var region = await _regionRepository.GetAllAsync();
+        //public async Task<SavePokemonViewModel> GetRegionFinally()
+        //{
+        //    var region = await _regionRepository.GetAllAsync();
 
-            SavePokemonViewModel vm = new();
-            vm.region = region;
-            return vm;
-        }
+        //    SavePokemonViewModel vm = new();
+        //    vm.region = region;
+        //    return vm;
+        //}
 
-        public async Task<SavePokemonViewModel> GetTypeeFinally()
-        {
-            var typee = await _typeRepository.GetAllAsync();
+        //public async Task<SavePokemonViewModel> GetTypeeFinally()
+        //{
+        //    var typee = await _typeRepository.GetAllAsync();
 
-            SavePokemonViewModel vm = new();
-            vm.Typee = typee;
-            return vm;
-        }
+        //    SavePokemonViewModel vm = new();
+        //    vm.Typee = typee;
+        //    return vm;
+        //}
 
         public async Task<List<PokemonViewModel>> GetAllViewModel()
         {
